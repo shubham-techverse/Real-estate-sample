@@ -1,0 +1,1582 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TriCity Estates Zirakpur | Luxury Flats, Penthouses & Commercial Spaces</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#080E1E',
+              navy: '#0B132B',
+              slate: '#1C2541',
+              card: '#161F38',
+              gold: '#D4AF37',
+              goldHover: '#B89628',
+              goldLight: '#F3E5AB',
+              accent: '#3A506B',
+              emerald: '#10B981'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B132B;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1C2541;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #D4AF37;
+    }
+    
+    /* Range Slider Styling */
+    input[type=range] {
+      accent-color: #D4AF37;
+    }
+
+    .glass-card {
+      background: rgba(28, 37, 65, 0.75);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+    }
+
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #F9E79F 0%, #D4AF37 50%, #AA7C11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .gold-gradient-bg {
+      background: linear-gradient(135deg, #E6C25B 0%, #D4AF37 50%, #B89025 100%);
+    }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-gold selection:text-brand-dark pb-20 md:pb-0">
+
+  <!-- TOP TRUST ANNOUNCEMENT BAR -->
+  <div class="bg-gradient-to-r from-brand-slate via-brand-navy to-brand-slate border-b border-brand-gold/20 py-2 px-4 text-xs sm:text-sm text-slate-300">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2 font-medium">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span> Verified Deals
+        </span>
+        <span>Punjab RERA Registered Agency &bull; Zero Brokerage On Direct Builder Allotments</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="hidden md:inline text-slate-400"><i class="fa-solid fa-location-dot text-brand-gold mr-1"></i> VIP Road & PR7 Hub, Zirakpur</span>
+        <a href="tel:+919876543210" class="text-brand-gold hover:text-white transition font-semibold">
+          <i class="fa-solid fa-phone-volume mr-1"></i> +91 98765 43210
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-brand-navy/90 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl gold-gradient-bg flex items-center justify-center text-brand-dark font-black text-xl shadow-lg shadow-brand-gold/20 group-hover:scale-105 transition">
+          <i class="fa-solid fa-building-shield"></i>
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-white block leading-tight">
+            TRICITY<span class="gold-gradient-text">ESTATES</span>
+          </span>
+          <span class="text-[10px] tracking-widest uppercase text-slate-400 font-semibold block">
+            Zirakpur &bull; Mohali &bull; Chd
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium">
+        <a href="#projects" class="text-slate-300 hover:text-brand-gold transition">Featured Projects</a>
+        <a href="#localities" class="text-slate-300 hover:text-brand-gold transition">Why Zirakpur</a>
+        <a href="#matcher" class="text-slate-300 hover:text-brand-gold transition">Deal Matcher</a>
+        <a href="#calculator" class="text-slate-300 hover:text-brand-gold transition">EMI Calculator</a>
+        <a href="#reviews" class="text-slate-300 hover:text-brand-gold transition">Testimonials</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20properties%20in%20Zirakpur" target="_blank" class="px-4 py-2.5 rounded-lg border border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/10 transition flex items-center gap-2 text-sm font-semibold">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>WhatsApp</span>
+        </a>
+        <button onclick="openModal('visitModal')" class="gold-gradient-bg hover:opacity-90 text-brand-dark px-5 py-2.5 rounded-lg font-bold text-sm shadow-lg shadow-brand-gold/25 transition transform active:scale-95 flex items-center gap-2">
+          <i class="fa-solid fa-calendar-check"></i>
+          <span>Book Site Visit</span>
+        </button>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 text-slate-300 hover:text-brand-gold focus:outline-none">
+        <i id="mobileMenuIcon" class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-brand-slate/98 border-b border-white/10 px-6 py-6 space-y-4">
+      <a href="#projects" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-brand-gold py-1">Featured Projects</a>
+      <a href="#localities" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-brand-gold py-1">Why Zirakpur</a>
+      <a href="#matcher" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-brand-gold py-1">Deal Matcher</a>
+      <a href="#calculator" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-brand-gold py-1">EMI Calculator</a>
+      <a href="#reviews" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-brand-gold py-1">Client Testimonials</a>
+      <div class="pt-4 border-t border-white/10 flex flex-col gap-3">
+        <button onclick="openModal('visitModal'); toggleMobileMenu()" class="w-full gold-gradient-bg text-brand-dark font-bold py-3 rounded-lg text-center">
+          Book Free VIP Site Visit
+        </button>
+        <a href="tel:+919876543210" class="w-full text-center py-2.5 border border-white/20 rounded-lg text-slate-200">
+          <i class="fa-solid fa-phone mr-2"></i> Call: +91 98765 43210
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH DUAL COLUMN LEAD CAPTURE -->
+  <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-14 lg:py-20">
+    <!-- Background Architectural Image with Dark Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80" alt="Luxury Real Estate" class="w-full h-full object-cover opacity-25 filter brightness-75 scale-105 transition-transform duration-1000">
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-navy/90 to-brand-dark/80"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,175,55,0.08)_0,transparent_70%)]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left: Value Proposition -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-gold/15 border border-brand-gold/30 text-brand-goldLight text-xs sm:text-sm font-semibold">
+            <i class="fa-solid fa-crown text-brand-gold"></i>
+            <span>#1 Luxury Property Advisor in Zirakpur & Mohali</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+            Discover Prime Living & High-ROI Assets on <span class="gold-gradient-text font-serif">PR7 & VIP Road</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+            Direct builder allotment in 100% RERA verified gated communities, ultra-luxury 3/4 BHK penthouses, and high-footfall commercial SCOs. Enjoy 0% brokerage and verified price guarantees.
+          </p>
+
+          <!-- Key Metrics Pills -->
+          <div class="grid grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0">
+            <div class="glass-card p-3 rounded-xl text-center">
+              <div class="text-xl sm:text-2xl font-bold gold-gradient-text">1,500+</div>
+              <div class="text-[11px] sm:text-xs text-slate-300">Keys Delivered</div>
+            </div>
+            <div class="glass-card p-3 rounded-xl text-center">
+              <div class="text-xl sm:text-2xl font-bold gold-gradient-text">100%</div>
+              <div class="text-[11px] sm:text-xs text-slate-300">RERA Approved</div>
+            </div>
+            <div class="glass-card p-3 rounded-xl text-center">
+              <div class="text-xl sm:text-2xl font-bold gold-gradient-text">₹0</div>
+              <div class="text-[11px] sm:text-xs text-slate-300">Brokerage Fee</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Instant VIP Brochure & Pricing Form -->
+        <div class="lg:col-span-5">
+          <div class="glass-card p-6 sm:p-8 rounded-2xl shadow-2xl relative border-brand-gold/30">
+            <div class="absolute -top-3 right-6 bg-brand-gold text-brand-dark text-xs font-black uppercase tracking-wider px-3 py-1 rounded-full shadow">
+              Instant PDF Delivery
+            </div>
+
+            <div class="mb-5 text-left">
+              <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                <i class="fa-solid fa-file-invoice-dollar text-brand-gold"></i> Get VIP Pricing & Brochure
+              </h3>
+              <p class="text-xs text-slate-400 mt-1">Receive floor plans, unlisted inventory & price lists instantly on WhatsApp.</p>
+            </div>
+
+            <form id="heroLeadForm" onsubmit="handleHeroSubmit(event)" class="space-y-4 text-left">
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400">
+                    <i class="fa-regular fa-user text-sm"></i>
+                  </span>
+                  <input type="text" id="heroName" required placeholder="Sukhwinder Singh" class="w-full pl-9 pr-3 py-2.5 rounded-lg bg-brand-dark/80 border border-white/15 focus:border-brand-gold focus:outline-none text-sm text-white placeholder-slate-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number (WhatsApp)</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400 font-semibold text-xs">
+                    +91
+                  </span>
+                  <input type="tel" id="heroPhone" required pattern="[0-9]{10}" placeholder="98XXXXXXXX" class="w-full pl-11 pr-3 py-2.5 rounded-lg bg-brand-dark/80 border border-white/15 focus:border-brand-gold focus:outline-none text-sm text-white placeholder-slate-500">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Looking For in Zirakpur</label>
+                <div class="relative">
+                  <span class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-slate-400">
+                    <i class="fa-solid fa-home text-sm"></i>
+                  </span>
+                  <select id="heroPreference" class="w-full pl-9 pr-3 py-2.5 rounded-lg bg-brand-dark/80 border border-white/15 focus:border-brand-gold focus:outline-none text-sm text-white appearance-none cursor-pointer">
+                    <option value="3 BHK Luxury Apartment">3 BHK Luxury Apartment (PR-7 / VIP Rd)</option>
+                    <option value="4 BHK / Penthouse">4 BHK Sky Villa / Penthouse</option>
+                    <option value="2 BHK Budget Friendly">2 BHK Affordable Flat</option>
+                    <option value="Commercial SCO / Retail">Commercial SCO Showroom / Food Court</option>
+                    <option value="Residential Plot">Freehold Residential Plot</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-2 pt-1">
+                <input type="checkbox" id="heroConsent" checked class="mt-1 accent-brand-gold rounded">
+                <label for="heroConsent" class="text-[11px] text-slate-400 leading-tight">
+                  I agree to receive official project floor plans, RERA documents, and VIP invitations on WhatsApp.
+                </label>
+              </div>
+
+              <button type="submit" class="w-full gold-gradient-bg hover:opacity-95 text-brand-dark font-extrabold py-3.5 rounded-lg text-sm shadow-xl shadow-brand-gold/20 transition transform active:scale-[0.98] flex items-center justify-center gap-2">
+                <span>Unlock VIP Inventory & Price List</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-center gap-4 text-[11px] text-slate-400">
+              <span><i class="fa-solid fa-lock text-brand-gold mr-1"></i> 100% Confidential</span>
+              <span><i class="fa-solid fa-bolt text-emerald-400 mr-1"></i> Instant 2-Min Response</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- INTERACTIVE SEARCH / FILTER BAR STRIP -->
+      <div class="mt-12 glass-card p-4 sm:p-5 rounded-2xl shadow-xl border border-brand-gold/30">
+        <form onsubmit="handleQuickFilter(event)" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-center">
+          
+          <!-- Locality -->
+          <div>
+            <label class="block text-[11px] uppercase tracking-wider font-bold text-brand-gold mb-1">Locality</label>
+            <div class="relative">
+              <i class="fa-solid fa-map-pin absolute left-3 top-3 text-slate-400 text-sm"></i>
+              <select id="searchLocality" class="w-full pl-9 pr-3 py-2 rounded-lg bg-brand-dark border border-white/15 text-sm text-slate-200 focus:outline-none focus:border-brand-gold">
+                <option value="all">All Locations (Zirakpur & Mohali)</option>
+                <option value="pr7">PR-7 Airport Ring Road</option>
+                <option value="vip">VIP Road</option>
+                <option value="highground">High Ground Road</option>
+                <option value="patiala">Patiala Highway</option>
+                <option value="dhakoli">Peer Muchalla / Dhakoli</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Configuration -->
+          <div>
+            <label class="block text-[11px] uppercase tracking-wider font-bold text-brand-gold mb-1">Configuration</label>
+            <div class="relative">
+              <i class="fa-solid fa-couch absolute left-3 top-3 text-slate-400 text-sm"></i>
+              <select id="searchType" class="w-full pl-9 pr-3 py-2 rounded-lg bg-brand-dark border border-white/15 text-sm text-slate-200 focus:outline-none focus:border-brand-gold">
+                <option value="all">All Property Configurations</option>
+                <option value="2bhk">2 BHK Flats (₹45L - ₹65L)</option>
+                <option value="3bhk">3 BHK Luxury (₹75L - ₹1.35Cr)</option>
+                <option value="4bhk">4 BHK / Sky Villas (₹1.5Cr+)</option>
+                <option value="commercial">Commercial SCOs / Showrooms</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Budget Range -->
+          <div>
+            <label class="block text-[11px] uppercase tracking-wider font-bold text-brand-gold mb-1">Max Budget</label>
+            <div class="relative">
+              <i class="fa-solid fa-indian-rupee-sign absolute left-3 top-3 text-slate-400 text-sm"></i>
+              <select id="searchBudget" class="w-full pl-9 pr-3 py-2 rounded-lg bg-brand-dark border border-white/15 text-sm text-slate-200 focus:outline-none focus:border-brand-gold">
+                <option value="any">Flexible / Any Budget</option>
+                <option value="60">Under ₹60 Lakhs</option>
+                <option value="100">₹60 Lakhs – ₹1.00 Crore</option>
+                <option value="150">₹1.00 Crore – ₹1.75 Crore</option>
+                <option value="250">₹2.00 Crore+ Luxury Segment</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Action Button -->
+          <div class="pt-1 sm:pt-4">
+            <button type="submit" class="w-full gold-gradient-bg text-brand-dark font-extrabold py-2.5 rounded-lg text-sm hover:brightness-105 transition flex items-center justify-center gap-2 shadow">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span>Find Handpicked Matches</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRUST & CREDIBILITY STATS STRIP -->
+  <section class="border-y border-brand-gold/20 bg-brand-slate/60 py-8 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        
+        <div class="space-y-1">
+          <div class="text-brand-gold text-2xl sm:text-3xl"><i class="fa-solid fa-certificate"></i></div>
+          <div class="text-xl sm:text-2xl font-black text-white">100% RERA</div>
+          <div class="text-xs text-slate-400 font-medium">Clear Title Guaranteed</div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="text-emerald-400 text-2xl sm:text-3xl"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <div class="text-xl sm:text-2xl font-black text-white">₹0 Brokerage</div>
+          <div class="text-xs text-slate-400 font-medium">Direct Authorized Pricing</div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="text-brand-gold text-2xl sm:text-3xl"><i class="fa-solid fa-car-side"></i></div>
+          <div class="text-xl sm:text-2xl font-black text-white">Free Cab Visit</div>
+          <div class="text-xs text-slate-400 font-medium">Doorstep Pickup & Drop</div>
+        </div>
+
+        <div class="space-y-1">
+          <div class="text-amber-400 text-2xl sm:text-3xl"><i class="fa-solid fa-star"></i></div>
+          <div class="text-xl sm:text-2xl font-black text-white">4.9 / 5.0</div>
+          <div class="text-xs text-slate-400 font-medium">540+ Google Reviews</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS IN ZIRAKPUR -->
+  <section id="projects" class="py-20 bg-brand-dark relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title & Category Filter Tabs -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-brand-gold uppercase tracking-widest text-xs font-bold block mb-1">PRIME TRICITY PORTFOLIO</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Featured Projects in <span class="gold-gradient-text font-serif">Zirakpur</span></h2>
+          <p class="text-slate-400 text-sm mt-2 max-w-xl">
+            RERA approved high-rise societies, independent floors, and commercial hubs on PR-7 International Airport Road and VIP Road.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="filterProperties('all')" class="tab-btn active px-4 py-2 rounded-lg text-xs font-bold border border-brand-gold/40 bg-brand-gold text-brand-dark transition">All (6)</button>
+          <button onclick="filterProperties('luxury')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold border border-white/10 bg-brand-slate text-slate-300 hover:border-brand-gold/50 transition">Luxury Flats</button>
+          <button onclick="filterProperties('commercial')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold border border-white/10 bg-brand-slate text-slate-300 hover:border-brand-gold/50 transition">Commercial / SCO</button>
+          <button onclick="filterProperties('ready')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold border border-white/10 bg-brand-slate text-slate-300 hover:border-brand-gold/50 transition">Ready To Move</button>
+        </div>
+      </div>
+
+      <!-- Property Grid -->
+      <div id="propertyGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- CARD 1 -->
+        <div class="property-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-brand-gold/50 transition duration-300 group flex flex-col justify-between" data-category="luxury">
+          <div>
+            <div class="relative overflow-hidden h-56">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Skylark Heights PR7" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-brand-dark/85 backdrop-blur-md px-2.5 py-1 rounded text-xs font-semibold text-brand-gold border border-brand-gold/30">
+                PR-7 Airport Road
+              </div>
+              <div class="absolute top-3 right-3 bg-emerald-600/90 text-white px-2.5 py-1 rounded text-xs font-bold">
+                Possession 2026
+              </div>
+              <div class="absolute bottom-3 left-3 text-white text-xs bg-black/60 px-2 py-0.5 rounded">
+                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> RERA: PBRERA-SAS79-PR0892
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex justify-between items-baseline mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition">Elysium Grand Residences</h3>
+              </div>
+              <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-4">
+                <i class="fa-solid fa-location-dot text-brand-gold"></i> Facing 200ft PR-7 Airport Ring Road, Zirakpur
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/10 text-center mb-4">
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Config</span>
+                  <span class="text-white text-xs font-bold">3 & 4 BHK</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Super Area</span>
+                  <span class="text-white text-xs font-bold">2,150 Sq.Ft</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Clubhouse</span>
+                  <span class="text-white text-xs font-bold">40,000 Sq.Ft</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-medium">Starting Price</span>
+                  <span class="text-xl font-extrabold gold-gradient-text">₹1.15 Cr*</span>
+                </div>
+                <span class="text-xs text-emerald-400 font-semibold bg-emerald-500/10 px-2 py-1 rounded">Pre-Launch Offer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-0 flex gap-2">
+            <button onclick="openFloorPlanModal('Elysium Grand Residences', '3 & 4 BHK Luxury Suites')" class="flex-1 py-2.5 px-3 rounded-lg border border-brand-gold/40 text-brand-gold text-xs font-bold hover:bg-brand-gold/10 transition text-center">
+              Floor Plan
+            </button>
+            <button onclick="requestProjectInfo('Elysium Grand Residences', '₹1.15 Cr')" class="flex-1 py-2.5 px-3 rounded-lg gold-gradient-bg text-brand-dark text-xs font-black hover:opacity-90 transition text-center flex items-center justify-center gap-1">
+              <i class="fa-brands fa-whatsapp text-sm"></i> VIP Price
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="property-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-brand-gold/50 transition duration-300 group flex flex-col justify-between" data-category="ready">
+          <div>
+            <div class="relative overflow-hidden h-56">
+              <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Royal Palm VIP Road" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-brand-dark/85 backdrop-blur-md px-2.5 py-1 rounded text-xs font-semibold text-brand-gold border border-brand-gold/30">
+                VIP Road Main
+              </div>
+              <div class="absolute top-3 right-3 bg-blue-600/90 text-white px-2.5 py-1 rounded text-xs font-bold">
+                Ready to Move
+              </div>
+              <div class="absolute bottom-3 left-3 text-white text-xs bg-black/60 px-2 py-0.5 rounded">
+                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> RERA: PBRERA-SAS79-PR0410
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex justify-between items-baseline mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition">The Grand Vista Towers</h3>
+              </div>
+              <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-4">
+                <i class="fa-solid fa-location-dot text-brand-gold"></i> Heart of VIP Road (Walk to Supermarket & Schools)
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/10 text-center mb-4">
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Config</span>
+                  <span class="text-white text-xs font-bold">3 BHK + Store</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Possession</span>
+                  <span class="text-white text-xs font-bold">Immediate</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Families Living</span>
+                  <span class="text-white text-xs font-bold">120+ Families</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-medium">Starting Price</span>
+                  <span class="text-xl font-extrabold gold-gradient-text">₹78.5 Lakhs*</span>
+                </div>
+                <span class="text-xs text-slate-400 font-semibold bg-white/5 px-2 py-1 rounded">Registry Ready</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-0 flex gap-2">
+            <button onclick="openFloorPlanModal('The Grand Vista Towers', '3 BHK + Store')" class="flex-1 py-2.5 px-3 rounded-lg border border-brand-gold/40 text-brand-gold text-xs font-bold hover:bg-brand-gold/10 transition text-center">
+              Floor Plan
+            </button>
+            <button onclick="requestProjectInfo('The Grand Vista Towers', '₹78.5 Lakhs')" class="flex-1 py-2.5 px-3 rounded-lg gold-gradient-bg text-brand-dark text-xs font-black hover:opacity-90 transition text-center flex items-center justify-center gap-1">
+              <i class="fa-brands fa-whatsapp text-sm"></i> VIP Price
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="property-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-brand-gold/50 transition duration-300 group flex flex-col justify-between" data-category="commercial">
+          <div>
+            <div class="relative overflow-hidden h-56">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="PR7 Commercial SCO" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-brand-dark/85 backdrop-blur-md px-2.5 py-1 rounded text-xs font-semibold text-brand-gold border border-brand-gold/30">
+                PR-7 High Footfall Belt
+              </div>
+              <div class="absolute top-3 right-3 bg-amber-500 text-brand-dark px-2.5 py-1 rounded text-xs font-black">
+                12% Expected ROI
+              </div>
+              <div class="absolute bottom-3 left-3 text-white text-xs bg-black/60 px-2 py-0.5 rounded">
+                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> RERA: PBRERA-SAS79-COM012
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex justify-between items-baseline mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition">Avenue Boulevard Commercial SCO</h3>
+              </div>
+              <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-4">
+                <i class="fa-solid fa-location-dot text-brand-gold"></i> Direct Airport Expressway Frontage, Zirakpur
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/10 text-center mb-4">
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Floor Structure</span>
+                  <span class="text-white text-xs font-bold">B + G + 4 Storey</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Plot Size</span>
+                  <span class="text-white text-xs font-bold">16.5 x 65 Ft</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Lease Option</span>
+                  <span class="text-white text-xs font-bold">Top Brands</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-medium">Starting Investment</span>
+                  <span class="text-xl font-extrabold gold-gradient-text">₹1.85 Cr*</span>
+                </div>
+                <span class="text-xs text-brand-gold font-semibold bg-brand-gold/10 px-2 py-1 rounded">High Rental Yield</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-0 flex gap-2">
+            <button onclick="openFloorPlanModal('Avenue Boulevard SCO', 'Commercial SCO / Showroom Space')" class="flex-1 py-2.5 px-3 rounded-lg border border-brand-gold/40 text-brand-gold text-xs font-bold hover:bg-brand-gold/10 transition text-center">
+              Layout Map
+            </button>
+            <button onclick="requestProjectInfo('Avenue Boulevard Commercial SCO', '₹1.85 Cr')" class="flex-1 py-2.5 px-3 rounded-lg gold-gradient-bg text-brand-dark text-xs font-black hover:opacity-90 transition text-center flex items-center justify-center gap-1">
+              <i class="fa-brands fa-whatsapp text-sm"></i> ROI Sheet
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="property-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-brand-gold/50 transition duration-300 group flex flex-col justify-between" data-category="luxury">
+          <div>
+            <div class="relative overflow-hidden h-56">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="High Ground Villa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-brand-dark/85 backdrop-blur-md px-2.5 py-1 rounded text-xs font-semibold text-brand-gold border border-brand-gold/30">
+                High Ground Road
+              </div>
+              <div class="absolute top-3 right-3 bg-purple-600/90 text-white px-2.5 py-1 rounded text-xs font-bold">
+                Ultra-Luxury
+              </div>
+              <div class="absolute bottom-3 left-3 text-white text-xs bg-black/60 px-2 py-0.5 rounded">
+                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> RERA: PBRERA-SAS79-PR0722
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex justify-between items-baseline mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition">The Crown Sky Mansions</h3>
+              </div>
+              <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-4">
+                <i class="fa-solid fa-location-dot text-brand-gold"></i> High Ground Road, Near Patiala Highway Bypass
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/10 text-center mb-4">
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Config</span>
+                  <span class="text-white text-xs font-bold">4 BHK + Servant</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Private Lift</span>
+                  <span class="text-white text-xs font-bold">Dedicated</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Ceiling</span>
+                  <span class="text-white text-xs font-bold">11 Ft Height</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-medium">Starting Price</span>
+                  <span class="text-xl font-extrabold gold-gradient-text">₹1.62 Cr*</span>
+                </div>
+                <span class="text-xs text-emerald-400 font-semibold bg-emerald-500/10 px-2 py-1 rounded">Low Density Living</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-0 flex gap-2">
+            <button onclick="openFloorPlanModal('The Crown Sky Mansions', '4 BHK + Servant Sky Mansion')" class="flex-1 py-2.5 px-3 rounded-lg border border-brand-gold/40 text-brand-gold text-xs font-bold hover:bg-brand-gold/10 transition text-center">
+              Floor Plan
+            </button>
+            <button onclick="requestProjectInfo('The Crown Sky Mansions', '₹1.62 Cr')" class="flex-1 py-2.5 px-3 rounded-lg gold-gradient-bg text-brand-dark text-xs font-black hover:opacity-90 transition text-center flex items-center justify-center gap-1">
+              <i class="fa-brands fa-whatsapp text-sm"></i> VIP Price
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="property-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-brand-gold/50 transition duration-300 group flex flex-col justify-between" data-category="ready">
+          <div>
+            <div class="relative overflow-hidden h-56">
+              <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=800&q=80" alt="Affordable 2 BHK" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-brand-dark/85 backdrop-blur-md px-2.5 py-1 rounded text-xs font-semibold text-brand-gold border border-brand-gold/30">
+                Peer Muchalla (Near Sector 20 Panchkula)
+              </div>
+              <div class="absolute top-3 right-3 bg-blue-600/90 text-white px-2.5 py-1 rounded text-xs font-bold">
+                Ready to Move
+              </div>
+              <div class="absolute bottom-3 left-3 text-white text-xs bg-black/60 px-2 py-0.5 rounded">
+                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> RERA: PBRERA-SAS79-PR0355
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex justify-between items-baseline mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition">Green Valley Residency</h3>
+              </div>
+              <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-4">
+                <i class="fa-solid fa-location-dot text-brand-gold"></i> 2 Mins from Panchkula Sector 20 Market
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/10 text-center mb-4">
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Config</span>
+                  <span class="text-white text-xs font-bold">2 & 3 BHK</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Bank Loan</span>
+                  <span class="text-white text-xs font-bold">All PSU Banks</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Security</span>
+                  <span class="text-white text-xs font-bold">3 Tier Gated</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-medium">Starting Price</span>
+                  <span class="text-xl font-extrabold gold-gradient-text">₹48.9 Lakhs*</span>
+                </div>
+                <span class="text-xs text-emerald-400 font-semibold bg-emerald-500/10 px-2 py-1 rounded">Zero Brokerage</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-0 flex gap-2">
+            <button onclick="openFloorPlanModal('Green Valley Residency', '2 & 3 BHK')" class="flex-1 py-2.5 px-3 rounded-lg border border-brand-gold/40 text-brand-gold text-xs font-bold hover:bg-brand-gold/10 transition text-center">
+              Floor Plan
+            </button>
+            <button onclick="requestProjectInfo('Green Valley Residency', '₹48.9 Lakhs')" class="flex-1 py-2.5 px-3 rounded-lg gold-gradient-bg text-brand-dark text-xs font-black hover:opacity-90 transition text-center flex items-center justify-center gap-1">
+              <i class="fa-brands fa-whatsapp text-sm"></i> VIP Price
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="property-card glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-brand-gold/50 transition duration-300 group flex flex-col justify-between" data-category="commercial">
+          <div>
+            <div class="relative overflow-hidden h-56">
+              <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=800&q=80" alt="Metro Mall Food Court" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-brand-dark/85 backdrop-blur-md px-2.5 py-1 rounded text-xs font-semibold text-brand-gold border border-brand-gold/30">
+                Chandigarh-Ambala Expressway
+              </div>
+              <div class="absolute top-3 right-3 bg-emerald-600/90 text-white px-2.5 py-1 rounded text-xs font-bold">
+                Lease Guarantee
+              </div>
+              <div class="absolute bottom-3 left-3 text-white text-xs bg-black/60 px-2 py-0.5 rounded">
+                <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> RERA: PBRERA-SAS79-COM099
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex justify-between items-baseline mb-2">
+                <h3 class="text-xl font-bold text-white group-hover:text-brand-gold transition">Signature Mall & Multiplex</h3>
+              </div>
+              <p class="text-xs text-slate-400 flex items-center gap-1.5 mb-4">
+                <i class="fa-solid fa-location-dot text-brand-gold"></i> Main Highway Junction, Zirakpur
+              </p>
+
+              <div class="grid grid-cols-3 gap-2 py-3 border-y border-white/10 text-center mb-4">
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Lock-In Yield</span>
+                  <span class="text-white text-xs font-bold">₹45,000 / Mo</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Min Ticket</span>
+                  <span class="text-white text-xs font-bold">350 Sq.Ft</span>
+                </div>
+                <div>
+                  <span class="block text-slate-400 text-[10px] uppercase font-semibold">Anchor Stores</span>
+                  <span class="text-white text-xs font-bold">PVR & Haldiram</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-medium">Starting Ticket</span>
+                  <span class="text-xl font-extrabold gold-gradient-text">₹38 Lakhs*</span>
+                </div>
+                <span class="text-xs text-amber-400 font-semibold bg-amber-500/10 px-2 py-1 rounded">Assured Return</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-0 flex gap-2">
+            <button onclick="openFloorPlanModal('Signature Mall & Multiplex', 'Food Court & Retail Suites')" class="flex-1 py-2.5 px-3 rounded-lg border border-brand-gold/40 text-brand-gold text-xs font-bold hover:bg-brand-gold/10 transition text-center">
+              Mall Map
+            </button>
+            <button onclick="requestProjectInfo('Signature Mall & Multiplex', '₹38 Lakhs')" class="flex-1 py-2.5 px-3 rounded-lg gold-gradient-bg text-brand-dark text-xs font-black hover:opacity-90 transition text-center flex items-center justify-center gap-1">
+              <i class="fa-brands fa-whatsapp text-sm"></i> ROI Sheet
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 text-center">
+        <button onclick="openModal('visitModal')" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-brand-gold/40 text-brand-gold hover:bg-brand-gold hover:text-brand-dark font-bold text-sm transition duration-300">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span>Schedule Physical Site Tour With Expert Advisor</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3-STEP INTERACTIVE PROPERTY MATCHER QUIZ -->
+  <section id="matcher" class="py-16 bg-gradient-to-b from-brand-dark via-brand-slate/40 to-brand-dark border-y border-white/5">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center mb-8">
+        <span class="text-brand-gold uppercase tracking-widest text-xs font-bold">1-MINUTE SMART MATCH</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Get 3 Tailored Projects Sent Directly to Your WhatsApp</h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-1">Answer 2 simple questions to eliminate clutter and save lakhs on direct deals.</p>
+      </div>
+
+      <div class="glass-card p-6 sm:p-10 rounded-3xl border border-brand-gold/30 shadow-2xl relative overflow-hidden">
+        
+        <!-- Step Indicator -->
+        <div class="flex items-center justify-between mb-8 relative">
+          <div class="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-0.5 bg-white/10 z-0"></div>
+          
+          <div id="stepDot1" class="relative z-10 w-9 h-9 rounded-full bg-brand-gold text-brand-dark flex items-center justify-center font-bold text-sm shadow">1</div>
+          <div id="stepDot2" class="relative z-10 w-9 h-9 rounded-full bg-brand-slate text-slate-400 border border-white/20 flex items-center justify-center font-bold text-sm">2</div>
+          <div id="stepDot3" class="relative z-10 w-9 h-9 rounded-full bg-brand-slate text-slate-400 border border-white/20 flex items-center justify-center font-bold text-sm">3</div>
+        </div>
+
+        <!-- STEP 1 CONTENT -->
+        <div id="quizStep1" class="quiz-step space-y-6">
+          <h3 class="text-lg font-bold text-white text-center">What is your primary purpose of buying property in Zirakpur?</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <button type="button" onclick="selectQuizPurpose('Self-Use / Dream Home')" class="p-5 rounded-xl border border-white/15 bg-brand-dark/50 hover:border-brand-gold hover:bg-brand-gold/10 transition text-left group">
+              <i class="fa-solid fa-house-chimney-window text-2xl text-brand-gold mb-2 block group-hover:scale-110 transition"></i>
+              <div class="font-bold text-white text-base">Self-Use (Family Home)</div>
+              <div class="text-xs text-slate-400 mt-1">Looking for immediate or near-term possession with top-tier amenities, green spaces, and schools nearby.</div>
+            </button>
+
+            <button type="button" onclick="selectQuizPurpose('Investment & High Rental Yield')" class="p-5 rounded-xl border border-white/15 bg-brand-dark/50 hover:border-brand-gold hover:bg-brand-gold/10 transition text-left group">
+              <i class="fa-solid fa-chart-line text-2xl text-emerald-400 mb-2 block group-hover:scale-110 transition"></i>
+              <div class="font-bold text-white text-base">High-ROI Investment</div>
+              <div class="text-xs text-slate-400 mt-1">Commercial SCO, lock-in food courts, or early-stage residential flats near Airport corridor for capital gains.</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 2 CONTENT -->
+        <div id="quizStep2" class="quiz-step hidden space-y-6">
+          <h3 class="text-lg font-bold text-white text-center">What is your targeted budget & preferred locality?</h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">Preferred Locality</label>
+              <select id="quizLocality" class="w-full p-3 rounded-lg bg-brand-dark border border-white/20 text-white text-sm focus:border-brand-gold focus:outline-none">
+                <option value="PR-7 International Airport Road">PR-7 International Airport Road (Top Priority)</option>
+                <option value="VIP Road">VIP Road (Established Central Hub)</option>
+                <option value="High Ground / Patiala Highway">High Ground / Patiala Road Bypass</option>
+                <option value="Peer Muchalla (Near Sector 20 Panchkula)">Peer Muchalla (Panchkula Border)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-2">Your Expected Budget</label>
+              <select id="quizBudget" class="w-full p-3 rounded-lg bg-brand-dark border border-white/20 text-white text-sm focus:border-brand-gold focus:outline-none">
+                <option value="₹45L - ₹70L">₹45 Lakhs – ₹70 Lakhs</option>
+                <option value="₹70L - ₹1.25 Cr">₹70 Lakhs – ₹1.25 Crore</option>
+                <option value="₹1.25 Cr - ₹2.5 Cr">₹1.25 Crore – ₹2.5 Crore</option>
+                <option value="₹2.5 Cr+">₹2.5 Crore+ (Commercial / Luxury Mansions)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex justify-between items-center pt-4">
+            <button type="button" onclick="setQuizStep(1)" class="text-xs text-slate-400 hover:text-white transition">
+              <i class="fa-solid fa-arrow-left mr-1"></i> Back to Step 1
+            </button>
+            <button type="button" onclick="setQuizStep(3)" class="gold-gradient-bg text-brand-dark font-bold text-xs px-6 py-2.5 rounded-lg shadow">
+              Next: View My Matches <i class="fa-solid fa-arrow-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3 CONTENT -->
+        <div id="quizStep3" class="quiz-step hidden space-y-6">
+          <div class="text-center">
+            <div class="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-2 text-xl">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white">We Found 3 Matches For You!</h3>
+            <p class="text-xs text-slate-400 mt-1">Enter your WhatsApp number to receive the direct builder brochure, pricing sheets, and floor plans instantly.</p>
+          </div>
+
+          <form onsubmit="handleQuizSubmit(event)" class="max-w-md mx-auto space-y-3">
+            <div>
+              <input type="text" id="quizUserName" required placeholder="Enter Your Name" class="w-full px-4 py-2.5 rounded-lg bg-brand-dark border border-white/20 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-brand-gold">
+            </div>
+            <div>
+              <input type="tel" id="quizUserPhone" required pattern="[0-9]{10}" placeholder="WhatsApp Number (10 digits)" class="w-full px-4 py-2.5 rounded-lg bg-brand-dark border border-white/20 text-white text-sm placeholder-slate-500 focus:outline-none focus:border-brand-gold">
+            </div>
+            <button type="submit" class="w-full gold-gradient-bg text-brand-dark font-extrabold py-3 rounded-lg text-sm shadow hover:brightness-105 transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Send 3 Matched Projects to WhatsApp</span>
+            </button>
+          </form>
+
+          <div class="text-center pt-2">
+            <button type="button" onclick="setQuizStep(2)" class="text-xs text-slate-400 hover:text-white transition">
+              <i class="fa-solid fa-arrow-left mr-1"></i> Modify preferences
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE HOME LOAN EMI & INVESTMENT CALCULATOR -->
+  <section id="calculator" class="py-20 bg-brand-dark relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-brand-gold uppercase tracking-widest text-xs font-bold">TRANSPARENT FINANCIAL PLANNING</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Interactive Home Loan <span class="gold-gradient-text font-serif">EMI Calculator</span></h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Calculate your monthly installment, interest cost, and required down payment for properties in Zirakpur with real bank rates (SBI, HDFC, ICICI).
+        </p>
+      </div>
+
+      <div class="glass-card rounded-3xl p-6 sm:p-10 border border-brand-gold/30 max-w-5xl mx-auto shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Controls Column -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Loan Amount -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-300">Property Loan Amount</label>
+                <span class="text-lg font-extrabold text-brand-gold" id="calcLoanDisplay">₹ 65,00,000</span>
+              </div>
+              <input type="range" id="loanRange" min="1500000" max="25000000" step="100000" value="6500000" oninput="updateCalculator()" class="w-full h-2 bg-brand-slate rounded-lg cursor-pointer">
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>₹15 Lakhs</span>
+                <span>₹1 Crore</span>
+                <span>₹2.5 Crores</span>
+              </div>
+            </div>
+
+            <!-- Interest Rate -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-300">Annual Interest Rate (%)</label>
+                <span class="text-lg font-extrabold text-brand-gold" id="calcRateDisplay">8.5%</span>
+              </div>
+              <input type="range" id="rateRange" min="7.5" max="12.0" step="0.1" value="8.5" oninput="updateCalculator()" class="w-full h-2 bg-brand-slate rounded-lg cursor-pointer">
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>7.5% (Prime)</span>
+                <span>9.0%</span>
+                <span>12.0%</span>
+              </div>
+            </div>
+
+            <!-- Tenure (Years) -->
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label class="text-xs font-bold uppercase tracking-wider text-slate-300">Loan Tenure (Years)</label>
+                <span class="text-lg font-extrabold text-brand-gold" id="calcTenureDisplay">20 Years</span>
+              </div>
+              <input type="range" id="tenureRange" min="5" max="30" step="1" value="20" oninput="updateCalculator()" class="w-full h-2 bg-brand-slate rounded-lg cursor-pointer">
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>5 Yrs</span>
+                <span>20 Yrs</span>
+                <span>30 Yrs</span>
+              </div>
+            </div>
+
+            <div class="p-3 bg-brand-dark/50 rounded-xl border border-white/5 flex items-center gap-3 text-xs text-slate-400">
+              <i class="fa-solid fa-circle-info text-brand-gold text-base"></i>
+              <span>All major banks approve up to 80-85% property value for our verified RERA partners.</span>
+            </div>
+
+          </div>
+
+          <!-- Output Display Card -->
+          <div class="lg:col-span-5 bg-brand-slate/90 p-6 sm:p-8 rounded-2xl border border-brand-gold/40 text-center space-y-6">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-slate-400 font-semibold block">Estimated Monthly EMI</span>
+              <div class="text-3xl sm:text-4xl font-black gold-gradient-text mt-1" id="emiResult">₹ 56,419</div>
+              <span class="text-[11px] text-slate-400">Per Month / Automated ECS</span>
+            </div>
+
+            <div class="space-y-3 pt-4 border-t border-white/10 text-xs">
+              <div class="flex justify-between text-slate-300">
+                <span>Principal Amount:</span>
+                <span class="font-bold text-white" id="principalResult">₹ 65,00,000</span>
+              </div>
+              <div class="flex justify-between text-slate-300">
+                <span>Total Interest Payable:</span>
+                <span class="font-bold text-amber-400" id="interestResult">₹ 70,40,560</span>
+              </div>
+              <div class="flex justify-between text-slate-300 pt-2 border-t border-white/5 font-semibold">
+                <span>Total Payment (Principal + Interest):</span>
+                <span class="font-extrabold text-emerald-400" id="totalResult">₹ 1,35,40,560</span>
+              </div>
+            </div>
+
+            <button onclick="openModal('visitModal')" class="w-full gold-gradient-bg text-brand-dark font-extrabold py-3 rounded-lg text-xs uppercase tracking-wider hover:opacity-95 transition shadow-lg shadow-brand-gold/20">
+              Apply For Pre-Approved Bank Loan
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY INVEST IN ZIRAKPUR & TRICITY -->
+  <section id="localities" class="py-20 bg-brand-navy/60 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-gold uppercase tracking-widest text-xs font-bold">THE STRATEGIC CORRIDOR</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Why Smart Investors Are Choosing <span class="gold-gradient-text font-serif">Zirakpur</span></h2>
+        <p class="text-slate-400 text-sm mt-2">
+          Positioned as the gateway connecting Chandigarh, Mohali, Panchkula, and Delhi, Zirakpur continues to outpace Tricity in infrastructure expansion.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-brand-gold/40 transition">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-brand-dark flex items-center justify-center text-xl font-bold mb-4">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">12 Mins to Int'l Airport</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            The 200-ft PR-7 Airport Ring Road provides seamless, signal-free access directly to Chandigarh International Airport (IXC), driving exponential commercial valuation.
+          </p>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-brand-gold/40 transition">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-brand-dark flex items-center justify-center text-xl font-bold mb-4">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Proximity to IT City Mohali</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Just 10 minutes drive from Infosys, Amity University, Plaksha, and QuarkCity, generating unmatched rental demand from high-earning tech and executive families.
+          </p>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-brand-gold/40 transition">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-brand-dark flex items-center justify-center text-xl font-bold mb-4">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Higher Capital Appreciation</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Property values on PR-7 and surrounding sectors have yielded an average of 14-18% YoY growth, significantly outperforming locked-in Chandigarh sectors.
+          </p>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-brand-gold/40 transition">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-brand-dark flex items-center justify-center text-xl font-bold mb-4">
+            <i class="fa-solid fa-road"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">New Bypass Corridors</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Upcoming ring road bypass projects diversion of heavy interstate traffic, giving Zirakpur internal avenues peaceful, pedestrian-friendly city vibes.
+          </p>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-brand-gold/40 transition">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-brand-dark flex items-center justify-center text-xl font-bold mb-4">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Retail & Lifestyle Hubs</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Home to major shopping destinations, multiplexes, international chains (Starbucks, Decathlon, McDonald's Drive-thru), and 5-star hospitality brands (Radisson, Park Plaza).
+          </p>
+        </div>
+
+        <div class="glass-card p-6 rounded-2xl border border-white/10 hover:border-brand-gold/40 transition">
+          <div class="w-12 h-12 rounded-xl gold-gradient-bg text-brand-dark flex items-center justify-center text-xl font-bold mb-4">
+            <i class="fa-solid fa-hospital-user"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Premier Healthcare & Schools</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Quick 10-15 min access to Alchemist Hospital, Fortis Mohali, Manipal Hospital, and elite schools including Manav Mangal Smart School and DPS.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF & TESTIMONIALS -->
+  <section id="reviews" class="py-20 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-brand-gold uppercase tracking-widest text-xs font-bold">CLIENT SATISFACTION</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">Trusted By Over <span class="gold-gradient-text font-serif">1,500+ Families</span></h2>
+        <p class="text-slate-400 text-sm mt-2">Here is what actual buyers and NRI investors say about our advisory services in Zirakpur.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs gap-1 mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 italic mb-6 leading-relaxed">
+              "We bought a 3 BHK on PR-7 Airport Road through TriCity Estates. The transparency was exceptional—zero brokerage was charged, and they coordinated all registry paperwork and loan approvals seamlessly with SBI."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold">
+              GK
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Gurpreet & Harmeet Kaur</div>
+              <div class="text-[11px] text-slate-400">Bought 3 BHK Luxury Flat (PR-7)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs gap-1 mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 italic mb-6 leading-relaxed">
+              "Being an NRI based in Toronto, trusting someone locally with my real estate savings was tough. Their team arranged virtual walkthroughs, verified RERA certificates, and leased out my commercial showroom in 4 weeks."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold">
+              RS
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Ravinder Singh Dhillon</div>
+              <div class="text-[11px] text-slate-400">NRI Investor (Canada)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-card p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 text-xs gap-1 mb-4">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 italic mb-6 leading-relaxed">
+              "Their team saved us nearly ₹4.5 Lakhs by negotiating direct builder allotment incentives during Diwali. If you are looking anywhere along VIP Road or Airport road, consult them first!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-10 h-10 rounded-full bg-brand-gold/20 flex items-center justify-center font-bold text-brand-gold">
+              AS
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Amit Sharma</div>
+              <div class="text-[11px] text-slate-400">Senior Director, IT Mohali</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SITE VISIT CALL-TO-ACTION BANNER -->
+  <section class="py-16 bg-gradient-to-r from-brand-slate via-brand-navy to-brand-slate border-y border-brand-gold/20">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+      <span class="inline-block px-3 py-1 bg-brand-gold/20 text-brand-gold rounded-full text-xs font-bold tracking-wider uppercase">
+        Complimentary Doorstep Service
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+        Experience The Projects in Person With Our <span class="gold-gradient-text">Free AC Cab Pickup & Drop</span>
+      </h2>
+      <p class="text-slate-300 text-sm max-w-2xl mx-auto font-light">
+        We pick you up from Chandigarh, Panchkula, or Mohali, conduct an executive tour of 3-4 top shortlisted properties, and review actual builder construction quality without any obligation.
+      </p>
+      <div class="pt-2 flex flex-col sm:flex-row justify-center gap-4">
+        <button onclick="openModal('visitModal')" class="gold-gradient-bg text-brand-dark px-8 py-3.5 rounded-xl font-extrabold text-sm shadow-xl shadow-brand-gold/20 hover:brightness-105 transition">
+          <i class="fa-solid fa-car mr-2"></i> Book Free Cab Site Visit
+        </button>
+        <a href="https://wa.me/919876543210?text=Hi,%20I%20would%20like%20to%20plan%20a%20site%20visit%20this%20weekend" target="_blank" class="px-8 py-3.5 rounded-xl border border-emerald-500/50 text-emerald-400 hover:bg-emerald-500/10 font-bold text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Schedule on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark border-t border-white/10 pt-16 pb-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        
+        <!-- Company Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <a href="#" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg gold-gradient-bg flex items-center justify-center text-brand-dark font-black text-lg">
+              <i class="fa-solid fa-building-shield"></i>
+            </div>
+            <span class="font-serif text-xl font-bold tracking-tight text-white block">
+              TRICITY<span class="gold-gradient-text">ESTATES</span>
+            </span>
+          </a>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            TriCity Estates is Zirakpur's premier property advisory firm dedicated to transparent, zero-brokerage real estate acquisition for luxury residential homes and commercial investments.
+          </p>
+          <div class="space-y-1.5 text-slate-300">
+            <p><i class="fa-solid fa-map-location-dot text-brand-gold mr-2"></i> SCO 14-15, 2nd Floor, PR-7 Airport Road, Zirakpur, Punjab 140603</p>
+            <p><i class="fa-solid fa-phone text-brand-gold mr-2"></i> +91 98765 43210 / +91 1762 299 888</p>
+            <p><i class="fa-solid fa-envelope text-brand-gold mr-2"></i> advisory@tricityestateszirakpur.com</p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Top Localities</h4>
+          <ul class="space-y-2">
+            <li><a href="#projects" class="hover:text-brand-gold transition">PR-7 Airport Ring Road</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">VIP Road Zirakpur</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">High Ground Road</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">Patiala Highway Corridor</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">Peer Muchalla / Panchkula Ext.</a></li>
+          </ul>
+        </div>
+
+        <!-- Property Types -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Configurations</h4>
+          <ul class="space-y-2">
+            <li><a href="#projects" class="hover:text-brand-gold transition">3 BHK Luxury Flats Zirakpur</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">4 BHK Sky Villas & Mansions</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">Affordable 2 BHK Apartments</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">Commercial Showrooms & SCOs</a></li>
+            <li><a href="#projects" class="hover:text-brand-gold transition">Ready To Move Societies</a></li>
+          </ul>
+        </div>
+
+        <!-- RERA & Compliance -->
+        <div class="space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">RERA Compliance</h4>
+          <p class="text-[11px] text-slate-400 leading-relaxed">
+            Registered Real Estate Agent with Real Estate Regulatory Authority of Punjab. Agent Reg No: <strong class="text-slate-200">PBRERA-SAS79-REA1294</strong>.
+          </p>
+          <div class="p-3 bg-brand-slate rounded-xl border border-white/10">
+            <span class="text-brand-gold font-bold block mb-1">Direct Builder Rates</span>
+            <span class="text-[10px] text-slate-300">All pricing shown represents authorized developer pricing with zero brokerage markups.</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal Disclaimer & Copyright -->
+      <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        <p class="text-[11px] text-slate-500">
+          &copy; 2026 TriCity Estates Advisory Pvt. Ltd. All Rights Reserved. Disclaimer: Property visuals are artistic impressions for marketing representation. All projects are subject to Punjab RERA guidelines.
+        </p>
+        <div class="flex gap-4 text-[11px] text-slate-400">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <span>&bull;</span>
+          <a href="#" class="hover:text-white transition">Terms of Service</a>
+          <span>&bull;</span>
+          <a href="#" class="hover:text-white transition">RERA Disclosures</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE BOTTOM BAR DOCK (Only visible on small devices) -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-brand-dark/95 backdrop-blur-md border-t border-brand-gold/30 p-2.5 flex items-center justify-around gap-2 md:hidden">
+    <a href="tel:+919876543210" class="flex-1 py-2.5 px-3 rounded-lg bg-brand-slate border border-white/20 text-white font-bold text-xs flex items-center justify-center gap-2 active:scale-95 transition">
+      <i class="fa-solid fa-phone text-brand-gold text-sm"></i>
+      <span>Call Expert</span>
+    </a>
+    
+    <a href="https://wa.me/919876543210?text=Hi,%20I%20am%20looking%20for%20property%20options%20in%20Zirakpur" target="_blank" class="flex-1 py-2.5 px-3 rounded-lg bg-emerald-600 text-white font-bold text-xs flex items-center justify-center gap-2 active:scale-95 transition shadow-lg shadow-emerald-600/30">
+      <i class="fa-brands fa-whatsapp text-base"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    <button onclick="openModal('visitModal')" class="flex-1 py-2.5 px-3 rounded-lg gold-gradient-bg text-brand-dark font-extrabold text-xs flex items-center justify-center gap-1.5 active:scale-95 transition">
+      <i class="fa-solid fa-car-side"></i>
+      <span>Free Visit</span>
+    </button>
+  </div>
+
+  <!-- MODAL: SITE VISIT BOOKING -->
+  <div id="visitModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="glass-card max-w-md w-full rounded-2xl border border-brand-gold/40 p-6 relative shadow-2xl animate-fade-in">
+      
+      <button onclick="closeModal('visitModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-4">
+        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest block">Doorstep Pickup Available</span>
+        <h3 class="text-xl font-bold text-white mt-1">Book Free VIP Site Visit</h3>
+        <p class="text-xs text-slate-300 mt-1">Our executive will pick you up in a sanitized AC cab and present top shortlisted properties.</p>
+      </div>
+
+      <form onsubmit="handleVisitSubmit(event)" class="space-y-3.5 text-left text-xs">
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Your Full Name</label>
+          <input type="text" id="visitName" required placeholder="Name" class="w-full px-3 py-2 rounded-lg bg-brand-dark border border-white/20 text-white placeholder-slate-500 focus:border-brand-gold focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Phone Number (+91)</label>
+          <input type="tel" id="visitPhone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" class="w-full px-3 py-2 rounded-lg bg-brand-dark border border-white/20 text-white placeholder-slate-500 focus:border-brand-gold focus:outline-none">
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div>
+            <label class="block font-semibold text-slate-300 mb-1">Preferred Date</label>
+            <input type="date" id="visitDate" required class="w-full px-3 py-2 rounded-lg bg-brand-dark border border-white/20 text-white focus:border-brand-gold focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-300 mb-1">Pickup City</label>
+            <select id="visitCity" class="w-full px-3 py-2 rounded-lg bg-brand-dark border border-white/20 text-white focus:border-brand-gold focus:outline-none">
+              <option value="Zirakpur">Zirakpur</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Panchkula">Panchkula</option>
+              <option value="Mohali">Mohali</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Projects of Interest</label>
+          <select id="visitProjectInterest" class="w-full px-3 py-2 rounded-lg bg-brand-dark border border-white/20 text-white focus:border-brand-gold focus:outline-none">
+            <option value="PR7 Luxury Flats">PR-7 Airport Road Luxury Flats (3/4 BHK)</option>
+            <option value="VIP Road Ready Flats">VIP Road Ready-To-Move Flats</option>
+            <option value="Commercial SCOs">Commercial High-Yield SCOs</option>
+            <option value="Best Overall Value">Advise me based on best builder reputation</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full mt-2 gold-gradient-bg text-brand-dark font-extrabold py-3 rounded-lg text-xs uppercase tracking-wider shadow-lg hover:opacity-95 transition">
+          Confirm Free Cab Pickup
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: FLOOR PLAN & BROCHURE REQUEST -->
+  <div id="floorPlanModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+    <div class="glass-card max-w-md w-full rounded-2xl border border-brand-gold/40 p-6 relative shadow-2xl">
+      
+      <button onclick="closeModal('floorPlanModal')" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-4">
+        <span class="text-brand-gold text-xs font-bold uppercase tracking-widest block">Direct Builder Architecture</span>
+        <h3 class="text-xl font-bold text-white mt-1" id="modalProjectTitle">Download Floor Plan</h3>
+        <p class="text-xs text-slate-300 mt-1" id="modalProjectSubtitle">Unlock detailed super area, carpet area, and layout diagram.</p>
+      </div>
+
+      <form onsubmit="handleFloorPlanSubmit(event)" class="space-y-3.5 text-left text-xs">
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">Your Full Name</label>
+          <input type="text" id="fpName" required placeholder="Name" class="w-full px-3 py-2 rounded-lg bg-brand-dark border border-white/20 text-white placeholder-slate-500 focus:border-brand-gold focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-300 mb-1">WhatsApp Number (+91)</label>
+          <input type="tel" id="fpPhone" required pattern="[0-9]{10}" placeholder="WhatsApp number for instant PDF" class="w-full px-3 py-2 rounded-lg bg-brand-dark border border-white/20 text-white placeholder-slate-500 focus:border-brand-gold focus:outline-none">
+        </div>
+
+        <input type="hidden" id="fpHiddenProjectName" value="">
+
+        <button type="submit" class="w-full mt-2 gold-gradient-bg text-brand-dark font-extrabold py-3 rounded-lg text-xs uppercase tracking-wider shadow-lg hover:opacity-95 transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Send PDF Floor Plan on WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- NOTIFICATION TOAST NOTIFIER -->
+  <div id="toast" class="fixed top-24 right-4 z-50 transform translate-x-full transition-transform duration-300 bg-brand-card border border-brand-gold text-white p-4 rounded-xl shadow-2xl max-w-sm flex items-start gap-3">
+    <div class="text-brand-gold text-xl mt-0.5">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div>
+      <h4 class="font-bold text-sm text-white" id="toastTitle">Inquiry Received</h4>
+      <p class="text-xs text-slate-300 mt-0.5" id="toastMessage">Your VIP pricing packet is being dispatched via WhatsApp.</p>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Set default tomorrow date in datepicker
+    window.addEventListener('DOMContentLoaded', () => {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dateStr = tomorrow.toISOString().split('T')[0];
+      const visitDateInput = document.getElementById('visitDate');
+      if (visitDateInput) {
+        visitDateInput.min = dateStr;
+        visitDateInput.value = dateStr;
+      }
+      updateCalculator();
+    });
+
+    // Mobile Menu Toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('mobileMenuIcon');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+      } else {
+        menu.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+      }
+    }
+
+    // Modal Control
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Floor Plan Dynamic Trigger
+    function openFloorPlanModal(projectName, spec) {
+      document.getElementById('modalProjectTitle').innerText = projectName;
+      document.getElementById('modalProjectSubtitle').innerText = "Layouts, Carpet Area & Pricing for " + spec;
+      document.getElementById('fpHiddenProjectName').value = projectName;
+      openModal('floorPlanModal');
+    }
+
+    // Direct WhatsApp Project Request Trigger
+    function requestProjectInfo(projectName, startingPrice) {
+      const text = `Hi TriCity Estates, please share the VIP pricing sheet, inventory, and floor plan for ${projectName} (Starting from ${startingPrice}) located in Zirakpur.`;
+      const url = `https://wa.me/919876543210?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    }
+
+    // Toast Trigger
+    function showToast(title, message) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastTitle').innerText = title;
+      document.getElementById('toastMessage').innerText = message;
+      toast.classList.remove('translate-x-full');
+      setTimeout(() => {
+        toast.classList.add('translate-x-full');
+      }, 4500);
+    }
+
+    // Hero Form Submit Handler
+    function handleHeroSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('heroName').value;
+      const phone = document.getElementById('heroPhone').value;
+      const pref = document.getElementById('heroPreference').value;
+      
+      showToast("VIP Brochure Dispatched!", `Thank you ${name}. Detailed information for ${pref} has been sent to +91 ${phone}.`);
+      document.getElementById('heroLeadForm').reset();
+    }
+
+    // Filter Form Submit
+    function handleQuickFilter(e) {
+      e.preventDefault();
+      const locality = document.getElementById('searchLocality').value;
+      const type = document.getElementById('searchType').value;
+      const budget = document.getElementById('searchBudget').value;
+
+      document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+      showToast("Filtered Inventory", `Displaying matches matching your preference.`);
+    }
+
+    // Property Category Filter Buttons
+    function filterProperties(category) {
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('active', 'bg-brand-gold', 'text-brand-dark');
+        btn.classList.add('bg-brand-slate', 'text-slate-300');
+      });
+      event.target.classList.add('active', 'bg-brand-gold', 'text-brand-dark');
+      event.target.classList.remove('bg-brand-slate', 'text-slate-300');
+
+      const cards = document.querySelectorAll('.property-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 3-Step Interactive Quiz Logic
+    let quizData = {
+      purpose: '',
+      locality: '',
+      budget: ''
+    };
+
+    function selectQuizPurpose(purpose) {
+      quizData.purpose = purpose;
+      setQuizStep(2);
+    }
+
+    function setQuizStep(stepNumber) {
+      // Hide all steps
+      document.getElementById('quizStep1').classList.add('hidden');
+      document.getElementById('quizStep2').classList.add('hidden');
+      document.getElementById('quizStep3').classList.add('hidden');
+
+      // Reset step indicator dots
+      const dots = [document.getElementById('stepDot1'), document.getElementById('stepDot2'), document.getElementById('stepDot3')];
+      dots.forEach((dot, index) => {
+        if (index + 1 <= stepNumber) {
+          dot.classList.remove('bg-brand-slate', 'text-slate-400');
+          dot.classList.add('bg-brand-gold', 'text-brand-dark');
+        } else {
+          dot.classList.remove('bg-brand-gold', 'text-brand-dark');
+          dot.classList.add('bg-brand-slate', 'text-slate-400');
+        }
+      });
+
+      // Show target step
+      document.getElementById(`quizStep${stepNumber}`).classList.remove('hidden');
+    }
+
+    function handleQuizSubmit(e) {
+      e.preventDefault();
+      const userName = document.getElementById('quizUserName').value;
+      const userPhone = document.getElementById('quizUserPhone').value;
+      const loc = document.getElementById('quizLocality').value;
+      const bud = document.getElementById('quizBudget').value;
+
+      showToast("Matches Sent!", `Hello ${userName}, we've routed 3 verified projects in ${loc} (${bud}) to +91 ${userPhone}.`);
+      setQuizStep(1);
+    }
+
+    // EMI Calculator Logic
+    function formatINR(val) {
+      return new Intl.NumberFormat('en-IN', {
+        style: 'currency',
+        currency: 'INR',
+        maximumFractionDigits: 0
+      }).format(val);
+    }
+
+    function updateCalculator() {
+      const P = parseFloat(document.getElementById('loanRange').value);
+      const annualR = parseFloat(document.getElementById('rateRange').value);
+      const years = parseInt(document.getElementById('tenureRange').value);
+
+      document.getElementById('calcLoanDisplay').innerText = formatINR(P);
+      document.getElementById('calcRateDisplay').innerText = annualR.toFixed(1) + "%";
+      document.getElementById('calcTenureDisplay').innerText = years + " Years";
+
+      const monthlyR = (annualR / 12) / 100;
+      const n = years * 12;
+
+      // EMI Formula: [P x R x (1+R)^N]/[(1+R)^N-1]
+      const emi = (P * monthlyR * Math.pow(1 + monthlyR, n)) / (Math.pow(1 + monthlyR, n) - 1);
+      const totalPayment = emi * n;
+      const totalInterest = totalPayment - P;
+
+      document.getElementById('emiResult').innerText = formatINR(emi);
+      document.getElementById('principalResult').innerText = formatINR(P);
+      document.getElementById('interestResult').innerText = formatINR(totalInterest);
+      document.getElementById('totalResult').innerText = formatINR(totalPayment);
+    }
+
+    // Free Visit Form Submit
+    function handleVisitSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('visitName').value;
+      const phone = document.getElementById('visitPhone').value;
+      const date = document.getElementById('visitDate').value;
+      const city = document.getElementById('visitCity').value;
+
+      closeModal('visitModal');
+      showToast("Site Visit Reserved!", `Pickup scheduled for ${date} in ${city} for ${name}. Our driver will contact +91 ${phone} 1 hour prior.`);
+    }
+
+    // Floor Plan Submit
+    function handleFloorPlanSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('fpName').value;
+      const phone = document.getElementById('fpPhone').value;
+      const project = document.getElementById('fpHiddenProjectName').value;
+
+      closeModal('floorPlanModal');
+      showToast("Floor Plan Sent!", `The official layout drawing for ${project} has been sent to +91 ${phone}.`);
+    }
+  </script>
+</body>
+</html>
+```
